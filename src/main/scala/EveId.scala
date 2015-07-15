@@ -23,7 +23,7 @@ object EveId {
 object EveIdCrestDecoders {
 
   //dat name do
-  implicit def EveIdDecodeJson : DecodeJson[EveId] = {
+  def eveIdHrefDecodeJson : DecodeJson[EveId] = {
     DecodeJson( ( cursor: HCursor ) => {
       cursor.as[String].flatMap {
         case c: String => JsonDecoders.fromValue( c, cursor )( EveId.fromHrefString )
@@ -31,5 +31,15 @@ object EveIdCrestDecoders {
     })
   }
 
-}
+  def eveIdInnerHrefDecodeJson : DecodeJson[EveId] = {
+    DecodeJson( ( cursor: HCursor ) =>  {
+      ( cursor --\ "href" ).as[String].flatMap {
+        case c: String => JsonDecoders.fromValue( c, cursor )( EveId.fromHrefString )
+      }
+    } )
+  }
 
+  implicit def EveIdDecodeJson : DecodeJson[EveId] = {
+    eveIdHrefDecodeJson ||| eveIdInnerHrefDecodeJson
+  }
+}
