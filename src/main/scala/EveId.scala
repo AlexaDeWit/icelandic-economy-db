@@ -39,7 +39,11 @@ object EveIdCrestDecoders {
     } )
   }
 
+  def eveIdFromLongIdDecodeJson : DecodeJson[EveId] = {
+    jdecode1L(EveId.apply)("id")
+  }
+
   implicit def EveIdDecodeJson : DecodeJson[EveId] = {
-    eveIdHrefDecodeJson ||| eveIdInnerHrefDecodeJson
+    eveIdFromLongIdDecodeJson ||| eveIdHrefDecodeJson ||| eveIdInnerHrefDecodeJson
   }
 }
