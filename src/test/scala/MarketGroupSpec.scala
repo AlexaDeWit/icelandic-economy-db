@@ -22,7 +22,7 @@ class MarketGroupSpec extends FlatSpec {
       , "description": "Boosters and Services"
     }
     """
-    val expected = MarketGroup( EveId(369234), EveId(350001), "Boosters & Services", "Boosters and Services" )
+    val expected = MarketGroup( 369234, 350001, "Boosters & Services", "Boosters and Services" )
     
     assert( Parse.decodeEither[MarketGroup]( inputStr ) == \/-( expected ) )
   }

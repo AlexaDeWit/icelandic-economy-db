@@ -7,13 +7,17 @@ case class EveId( id: Long )
 
 object EveId {
 
+  implicit def toLong( id: EveId ) = EveId.unapply( id ).get
+
   def fromHrefString( s: String ): String \/ EveId = {
     s match {
       case marketGroup( n ) => EveId(n.toLong).right
+      case regionUrl( n )   => EveId(n.toLong).right
       case _                => s"Id could not be parsed from ${s}".left
     }
   }
 
+  val regionUrl   = """https://public-crest.eveonline.com/regions/(\d+)/""".r
   val marketGroup = """https://public-crest.eveonline.com/market/groups/(\d+)/""".r
 
 }

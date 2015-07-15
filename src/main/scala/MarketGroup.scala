@@ -1,9 +1,8 @@
 package alexadewit_on_github.icelandic_economy.db
 
 import argonaut._, Argonaut._, DecodeResult._
-import scalaz._, scalaz.syntax.either._
 
-case class MarketGroup( id: EveId, parentId: EveId, name: String, description: String )
+case class MarketGroup( id: Long, parentId: Long, name: String, description: String )
 
 object MarketGroupCrestDecoders {
 

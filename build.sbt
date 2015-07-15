@@ -17,5 +17,5 @@ settings(
   )
 )
 
-scalacOptions in (Compile,doc) := Seq("-groups", "-implicits")
+scalacOptions in (Compile,doc) := Seq("-groups", "-implicits", "-feature")
 
