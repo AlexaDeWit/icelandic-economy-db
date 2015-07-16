@@ -1,0 +1,34 @@
+{
+    "stats": {
+      "href": "https://public-crest.eveonline.com/solarsystems/31000063/stats/"
+  }
+  , "name": "J225555"
+  , "securityStatus": -0.9900000095367432
+  , "securityClass": ""
+  , "href": "https://public-crest.eveonline.com/solarsystems/31000063/"
+  , "planets": [
+      {
+        "href": "https://public-crest.eveonline.com/planets/40353672/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/planets/40353674/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/planets/40353676/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/planets/40353678/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/planets/40353683/"
+    }
+  ]
+  , "position": {
+      "y": 29106877675693388
+    , "x": 7628929413404463000
+    , "z": -9508814632990106000
+  }
+  , "constellation": {
+      "href": "https://public-crest.eveonline.com/constellations/21000317/"
+  }
+}

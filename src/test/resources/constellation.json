@@ -1,0 +1,40 @@
+{
+    "position": {
+      "y": 3270194517300479.5
+    , "x": 7636076745007849000
+    , "z": -9509105238983340000
+  }
+  , "region": {
+      "href": "https://public-crest.eveonline.com/regions/11000001/"
+  }
+  , "systems": [
+      {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000063/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000064/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000065/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000066/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000067/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000068/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000069/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000070/"
+    }
+    , {
+        "href": "https://public-crest.eveonline.com/solarsystems/31000071/"
+    }
+  ]
+  , "name": "A-C00317"
+}
