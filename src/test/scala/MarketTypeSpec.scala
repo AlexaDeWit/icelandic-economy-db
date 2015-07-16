@@ -1,4 +1,5 @@
 import alexadewit_on_github.icelandic_economy.db._
+import alexadewit_on_github.icelandic_economy.crest._
 
 import org.scalatest._
 import argonaut._, Argonaut._, DecodeResult._
